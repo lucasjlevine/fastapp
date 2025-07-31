@@ -2,18 +2,31 @@
 
 {% block content %}
 <main class="container">
-    <div class="content">
+    <article class="content">
         <h1>Welcome to FastApp!</h1>
         <p>This is a simple FastAPI application using FastApp.</p>
         <p>FastApp is a framework that simplifies FastAPI development.</p>
-    </div>
+    </article>
 </main>
 
 <style>
-    div.content {
-        margin-top: 10rem;
+    article.content {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 6rem;
         padding: 1rem;
         text-align: center;
+        border-radius: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 </style>
 {% endblock %}
