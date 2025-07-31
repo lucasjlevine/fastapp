@@ -1,0 +1,22 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<script>
+    const generateGreetingUrl = () => {
+        const input = document.querySelector("#name");
+        const name = input.value;
+        const url = `/hello/${encodeURIComponent(name)}`;
+        input.value = ""; // Clear the input field
+
+        urlAnchor = document.querySelector("#url");
+        urlAnchor.href = url;
+        urlAnchor.textContent = url;
+    }
+</script>
+
+<h1>Want to get greeted?</h1>
+<input id="name" type="text" placeholder="your name" />
+<button onclick="generateGreetingUrl()">Generate URL</button>
+<br>
+<a id="url" href=""></a>
+{% endblock content %}
