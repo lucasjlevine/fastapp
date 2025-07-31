@@ -14,9 +14,31 @@
     }
 </script>
 
-<h1>Want to get greeted?</h1>
-<input id="name" type="text" placeholder="your name" />
-<button onclick="generateGreetingUrl()">Generate URL</button>
-<br>
-<a id="url" href=""></a>
+<main class="container">
+    <h1>Want to get greeted?</h1>
+    <fieldset id="fieldset" role="group">
+        <input id="name" type="text" placeholder="your name" />
+        <input type="button" onclick="generateGreetingUrl()" value="Make URL" />
+    </fieldset>
+    <br>
+    <a id="url" href=""></a>
+</main>
+
+<style>
+    main.container {
+        margin-top: 10rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    fieldset#fieldset {
+        margin-top: 2rem;
+        width: 50%;
+    }
+
+    a#url {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+</style>
 {% endblock content %}

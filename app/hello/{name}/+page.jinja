@@ -1,5 +1,22 @@
 {% extends "base.jinja" %}
 
 {% block content %}
-<p>Hello, {{ name }}!</p>
+<main class="container">
+    <p>Hello, <span>{{ name }}</span>!</p>
+</main>
+
+<style>
+    p {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    main.container {
+        margin-top: 10rem;
+    }
+</style>
 {% endblock %}

@@ -63,7 +63,7 @@ if __name__ == "__main__":
 ```bash
 HOST=127.0.0.1
 PORT=8000
-RELOAD=true
+RELOAD=True
 ```
 
 ## 🛠️ Routes

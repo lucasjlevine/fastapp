@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FastApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 
 <body>
-
+    <nav>
+        <ul>
+            <li><strong>FastApp</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/hello">Hello</a></li>
+        </ul>
+    </nav>
     {% block content %}
 
     {% endblock content %}
 
 </body>
+
+<style>
+    nav {
+        padding: 1rem;
+    }
+
+    main.container {
+        margin-inline: 2rem;
+    }
+</style>
 
 </html>
